@@ -1,0 +1,19 @@
+<div class="container" style="margin-top: 250px;">
+    <div class="citem">
+        <h2 style="text-align: center;" >Lab</h2>
+            <h5 class="text-center"> Technology exploration and simulation
+                software system building </h5>
+
+                <p>Coming soon...</p>
+            
+            {{ range (.Site.GetPage "section" "lab").Pages }}
+            <br>
+        <div class="post-preview">
+            <div class="post-preview__right">
+                <a class="post-preview" href="{{ .Permalink }}">{{ .Title }}</a>
+                <span>{{ .Date.Format "January 2, 2006" }}</span>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
