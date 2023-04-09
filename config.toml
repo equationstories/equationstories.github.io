@@ -1,3 +1,4 @@
 baseURL = "https://equationstories.github.io"
 languageCode = "en-us"
 title = "Equation Stories"
+publishDir = "docs"
