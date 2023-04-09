@@ -1,9 +1,9 @@
 :root {
-    --site_text: rgb(197,201,240);
+    --site_color: rgb(0, 0, 0);
     --site_heading: rgb(164,179,251);
-    --site_bg: rgb(30, 41, 59);
-    --link_color: rgb(129, 224, 185);
-    --link_color_hover: rgb(75,132,108);
+    --site_bg: rgb(255, 255, 255);
+    --link_color: rgb(187, 228, 197);
+    --link_color_hover: rgb(151, 191, 174);
     --font-mono: monospace;
     --site_font: var(--font-mono); 
     --flash_color: rgb(162, 209, 45);
@@ -11,20 +11,60 @@
 
 body {
     background-color: var(--site_bg);
-    color: var(--site_text);
+    color: var(--site_color);
     font-family: var(--site_font);
     font-size: 16px;
 } 
 
-a {
+/* a {
     color: var(--link_color);
     text-decoration: none;
-    /* font-size: 24px; */
-}
+    font-size: 24px;
+} */
+
+a {
+    color: var(--site_color);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  a:hover {
+      background-color: var(--link_color);
+      color: var(--site_color);
+      text-decoration: underline;
+      font-size: 16px;
+  }
+  
+  .stda {
+      /* color: var(--link_color2); */
+      background-color: var(--link_color);
+      text-decoration: none;
+    }
+  
+  .stda:hover {
+      color: var(--site_color);
+      background-color: var(--link_color);
+      text-decoration:underline;
+    }
+  
+  .nava {
+      color: var(--site_text);
+      /* background-color: var(--link_color); */
+      text-decoration: none;
+    }
+  
+  .nava:hover{
+      /* color: var(--link_color); */
+      color: var(--site_text);
+      background-color: var(--link_color);
+      text-decoration:underline;
+    }
+
+
 
 h1 {
     /* font-size: 52px; */
-    color: var(--site_text);
+    color: var(--site_color);
 }
 
 /* p {
@@ -70,10 +110,10 @@ label {
 
 
 
-a:hover {
+/* a:hover {
 color: var(--link_color_hover);
 text-decoration: none;
-}
+} */
 
 .c1 {
     color: var(--site_color1);
@@ -112,6 +152,12 @@ text-decoration: none;
 .citem {
     width: 600px;
 }
+
+@media (max-width: 768px) {
+    .citem {
+        width: 400px;
+    }
+  }
 
 /* Navbar */
 
@@ -155,8 +201,7 @@ nav {
 .nav-item {
     list-style: none;
     display: grid;
-    margin-right: 100px;
-    margin-left: 300px;
+    margin-left: 15%;
     margin-right: 20%;
 
     padding: 10px;
@@ -179,6 +224,7 @@ footer {
     margin-top: 100px;
     margin-left: 20%;
     margin-right: 20%;
+    line-height: 26px;
 }
 
 .footer-item {
