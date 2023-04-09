@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Equation Stories</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.css" />
-        <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.js" defer></script> 
-        <script type="text/javascript" id="MathJax-script" async
-                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-        </script>
-        {{- partial "navbar.html" . -}}
-    </head>
+    {{- partial "head.html" . -}}
     <body>
         {{- partial "home.html" . -}}
         {{- partial "lab.html" . -}}
@@ -20,14 +9,7 @@
     </body>
 </html>
 
-<script type="text/plain" data-cookiecategory="analytics">
-    document.getElementById("cookie-text").innerText = ""
-</script>
 
 
-<script defer src="js/cookieconsent-init.js"></script>
-<!-- Inline script -->
-</body>
-</html>
  
 
