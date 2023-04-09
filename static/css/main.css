@@ -172,6 +172,10 @@ nav {
     width: 100%; 
 }
 
+li {
+    margin-bottom: 12px;
+}
+
 /* nav {
 
     ul {
