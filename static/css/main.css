@@ -153,11 +153,12 @@ text-decoration: none;
     width: 600px;
 }
 
+
 @media (max-width: 600px) {
-    .citem {
-        width: 350px;
-    }
-  }
+.citem {
+    width: 320px;
+}
+}
 
 /* Navbar */
 
